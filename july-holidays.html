@@ -1,0 +1,43 @@
+import { existsSync, readFileSync } from "node:fs";
+import { dirname, resolve } from "node:path";
+
+const pages = [
+  "index.html",
+  "programmes.html",
+  "holidays.html",
+  "parent-info.html",
+  "about.html",
+  "blog.html",
+  "posts/july-holidays.html",
+  "404.html",
+];
+
+const problems = [];
+
+for (const page of pages) {
+  const html = readFileSync(page, "utf8");
+
+  for (const required of ["<title>", 'name="viewport"', "assets/styles.css"]) {
+    if (!html.includes(required) && !(page.startsWith("posts/") && required === "assets/styles.css" && html.includes("../assets/styles.css"))) {
+      problems.push(`${page}: missing ${required}`);
+    }
+  }
+
+  const references = [...html.matchAll(/(?:href|src)="([^"]+)"/g)].map((match) => match[1]);
+  for (const reference of references) {
+    if (/^(?:https?:|mailto:|tel:|#|data:)/.test(reference)) continue;
+    const cleanReference = reference.split("#")[0].split("?")[0];
+    if (!cleanReference) continue;
+    const absoluteReference = resolve(dirname(page), cleanReference);
+    if (!existsSync(absoluteReference)) {
+      problems.push(`${page}: broken reference ${reference}`);
+    }
+  }
+}
+
+if (problems.length) {
+  console.error(problems.join("\n"));
+  process.exit(1);
+}
+
+console.log(`Checked ${pages.length} pages: no broken local links or missing core metadata.`);

@@ -1,0 +1,22 @@
+import { readFile, writeFile } from "node:fs/promises";
+import { resolve, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const root = dirname(fileURLToPath(import.meta.url));
+let html = await readFile(resolve(root, "index.html"), "utf8");
+const css = await readFile(resolve(root, "assets/styles.css"), "utf8");
+const js = await readFile(resolve(root, "assets/site.js"), "utf8");
+
+html = html
+  .replace('<link rel="stylesheet" href="assets/styles.css" />', `<style>${css}</style>`)
+  .replace('<script src="assets/site.js" defer></script>', `<script>${js}</script>`);
+
+const svgSources = [...html.matchAll(/(?:src|href)="(assets\/[^"?#]+\.svg)"/g)].map((match) => match[1]);
+
+for (const source of new Set(svgSources)) {
+  const svg = await readFile(resolve(root, source), "utf8");
+  const data = `data:image/svg+xml;base64,${Buffer.from(svg).toString("base64")}`;
+  html = html.split(source).join(data);
+}
+
+await writeFile(resolve(root, "preview.html"), html);

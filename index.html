@@ -1,0 +1,1504 @@
+<!doctype html>
+<html lang="en-NZ">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Kidz.com provides before-school, after-school and school holiday care for children in Stratford, Taranaki." />
+    <title>Kidz.com | Before &amp; After School Care in Stratford</title>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9IiM2ZjRiZDgiLz4KICA8cGF0aCBkPSJNMTYgMTRoOXYxNWwxMy0xNWgxMUwzNCAzMWwxNiAxOUgzOEwyNSAzNHYxNmgtOXoiIGZpbGw9IiNmZmYiLz4KICA8Y2lyY2xlIGN4PSI1MSIgY3k9IjEyIiByPSI2IiBmaWxsPSIjZjdjOTRiIi8+Cjwvc3ZnPgo=" type="image/svg+xml" />
+    <style>:root {
+  --ink: #18323a;
+  --ink-soft: #49616a;
+  --cream: #fff9ee;
+  --paper: #ffffff;
+  --purple: #6f4bd8;
+  --purple-dark: #5430bd;
+  --yellow: #f7c94b;
+  --coral: #ee735f;
+  --teal: #2d998b;
+  --sky: #cfeff4;
+  --line: rgba(24, 50, 58, 0.14);
+  --shadow: 0 18px 50px rgba(34, 48, 55, 0.12);
+  --radius-sm: 14px;
+  --radius: 24px;
+  --radius-lg: 36px;
+  --max: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--cream);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 4px solid rgba(111, 75, 216, 0.28);
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: white;
+  transform: translateY(-140%);
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.site-alert {
+  padding: 9px 18px;
+  background: var(--yellow);
+  color: #3c2e05;
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 750;
+}
+
+.site-alert a {
+  text-underline-offset: 3px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 249, 238, 0.94);
+  backdrop-filter: blur(14px);
+}
+
+.nav-shell {
+  display: flex;
+  width: min(calc(100% - 36px), var(--max));
+  min-height: 76px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: baseline;
+  color: var(--ink);
+  font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  text-decoration: none;
+}
+
+.logo-dot {
+  color: var(--coral);
+}
+
+.logo-com {
+  color: var(--purple);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.site-nav a {
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 720;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  background: rgba(111, 75, 216, 0.1);
+  color: var(--purple-dark);
+}
+
+.site-nav .nav-cta {
+  margin-left: 6px;
+  padding-inline: 17px;
+  background: var(--purple);
+  color: white;
+  box-shadow: 0 8px 18px rgba(111, 75, 216, 0.2);
+}
+
+.site-nav .nav-cta:hover {
+  background: var(--purple-dark);
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.container {
+  width: min(calc(100% - 40px), var(--max));
+  margin: 0 auto;
+}
+
+.narrow {
+  width: min(calc(100% - 40px), 790px);
+  margin: 0 auto;
+}
+
+.section {
+  position: relative;
+  padding: 88px 0;
+}
+
+.section-sm {
+  padding: 56px 0;
+}
+
+.section-white {
+  background: var(--paper);
+}
+
+.section-purple {
+  overflow: hidden;
+  background: var(--purple);
+  color: white;
+}
+
+.section-sky {
+  background: var(--sky);
+}
+
+.section-coral {
+  background: #fff0ec;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--purple-dark);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.section-purple .eyebrow {
+  color: var(--yellow);
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  font-family: "Arial Rounded MT Bold", "Trebuchet MS", ui-sans-serif, sans-serif;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+h1 {
+  max-width: 830px;
+  margin-bottom: 24px;
+  font-size: clamp(3rem, 7vw, 5.9rem);
+}
+
+h2 {
+  margin-bottom: 22px;
+  font-size: clamp(2.15rem, 4vw, 3.8rem);
+}
+
+h3 {
+  margin-bottom: 12px;
+  font-size: 1.38rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+.lead {
+  max-width: 720px;
+  color: var(--ink-soft);
+  font-size: clamp(1.08rem, 2vw, 1.32rem);
+  line-height: 1.55;
+}
+
+.section-purple .lead,
+.section-purple .muted {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.muted {
+  color: var(--ink-soft);
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 50px;
+  padding: 12px 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: var(--purple);
+  color: white;
+  font-weight: 820;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  background: var(--purple-dark);
+  box-shadow: 0 10px 24px rgba(70, 43, 152, 0.2);
+}
+
+.button-secondary {
+  border-color: rgba(24, 50, 58, 0.18);
+  background: transparent;
+  color: var(--ink);
+}
+
+.button-secondary:hover {
+  background: var(--paper);
+}
+
+.section-purple .button {
+  background: var(--yellow);
+  color: #332704;
+}
+
+.section-purple .button-secondary {
+  border-color: rgba(255, 255, 255, 0.38);
+  background: transparent;
+  color: white;
+}
+
+.hero {
+  overflow: hidden;
+  padding: 84px 0 68px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.07fr) minmax(320px, 0.93fr);
+  align-items: center;
+  gap: 60px;
+}
+
+.hero h1 {
+  font-size: clamp(3.15rem, 6.8vw, 6.3rem);
+}
+
+.hero h1 span {
+  color: var(--purple);
+}
+
+.hero-art {
+  position: relative;
+}
+
+.hero-art img {
+  width: 100%;
+  filter: drop-shadow(0 24px 25px rgba(37, 47, 54, 0.13));
+}
+
+.hero-note {
+  position: absolute;
+  right: -12px;
+  bottom: 16px;
+  max-width: 180px;
+  padding: 13px 16px;
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  background: var(--yellow);
+  box-shadow: 6px 6px 0 var(--ink);
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 850;
+  line-height: 1.3;
+  transform: rotate(3deg);
+}
+
+.proof-strip {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.proof-item {
+  padding: 22px 26px;
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 760;
+}
+
+.proof-item + .proof-item {
+  border-left: 1px solid var(--line);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  align-items: start;
+  gap: 70px;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 42px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.card {
+  position: relative;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  box-shadow: 0 8px 24px rgba(38, 53, 59, 0.06);
+}
+
+.card-link {
+  color: var(--purple-dark);
+  font-weight: 800;
+  text-underline-offset: 4px;
+}
+
+.icon-disc {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 22px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(111, 75, 216, 0.11);
+  color: var(--purple-dark);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.value-card {
+  min-height: 230px;
+  padding: 28px;
+  border-radius: var(--radius);
+}
+
+.value-card:nth-child(1) {
+  background: var(--yellow);
+}
+
+.value-card:nth-child(2) {
+  background: #dcd2ff;
+}
+
+.value-card:nth-child(3) {
+  background: #d3f2ed;
+}
+
+.value-card:nth-child(4) {
+  background: #ffd9d0;
+}
+
+.number {
+  display: block;
+  margin-bottom: 34px;
+  font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.activity-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.activity-list li {
+  padding: 8px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  font-size: 0.86rem;
+  font-weight: 760;
+}
+
+.programme-feature {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--ink);
+  color: white;
+  box-shadow: var(--shadow);
+}
+
+.programme-copy {
+  padding: clamp(34px, 5vw, 64px);
+}
+
+.programme-copy .eyebrow {
+  color: var(--yellow);
+}
+
+.programme-visual {
+  display: grid;
+  padding: 34px;
+  place-items: center;
+  background: var(--purple);
+}
+
+.programme-poster {
+  width: min(100%, 420px);
+  padding: 28px;
+  border: 3px solid var(--ink);
+  border-radius: 18px;
+  background: var(--yellow);
+  color: var(--ink);
+  box-shadow: 10px 10px 0 rgba(24, 50, 58, 0.75);
+  transform: rotate(2deg);
+}
+
+.programme-poster h3 {
+  font-size: 2rem;
+}
+
+.poster-days {
+  display: grid;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.poster-day {
+  display: flex;
+  padding: 10px 12px;
+  border-radius: 10px;
+  justify-content: space-between;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.draft-chip {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: var(--coral);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.staff-card {
+  padding: 16px 16px 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  box-shadow: 0 10px 28px rgba(30, 49, 57, 0.08);
+}
+
+.staff-photo-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin: 0 0 22px;
+  padding: 0;
+  border: 0;
+  border-radius: 17px;
+  background: transparent;
+  cursor: pointer;
+  perspective: 1100px;
+}
+
+.staff-photo-inner {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  transform-style: preserve-3d;
+  transition: transform 720ms cubic-bezier(0.2, 0.72, 0.2, 1);
+}
+
+.staff-photo-button.is-flipped .staff-photo-inner,
+.staff-photo-button:hover .staff-photo-inner,
+.staff-photo-button:focus-visible .staff-photo-inner {
+  transform: rotateY(180deg);
+}
+
+.staff-photo-face {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  backface-visibility: hidden;
+}
+
+.staff-photo-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.staff-photo-alter {
+  transform: rotateY(180deg);
+}
+
+.flip-hint {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 4;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: rgba(24, 50, 58, 0.88);
+  color: white;
+  font-size: 0.68rem;
+  font-weight: 850;
+  pointer-events: none;
+}
+
+.staff-copy {
+  padding: 0 8px;
+}
+
+.staff-role {
+  margin: -4px 0 14px;
+  color: var(--purple-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.alter-ego {
+  margin: 18px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+
+.team-note {
+  margin-top: 26px;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.quote {
+  margin: 0;
+  font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+  font-size: clamp(1.7rem, 3vw, 2.75rem);
+  line-height: 1.24;
+  letter-spacing: -0.025em;
+}
+
+.quote-source {
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 750;
+}
+
+.cta-panel {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: clamp(34px, 6vw, 64px);
+  align-items: center;
+  gap: 30px;
+  border-radius: var(--radius-lg);
+  background: var(--yellow);
+}
+
+.cta-panel h2 {
+  max-width: 670px;
+  margin-bottom: 12px;
+}
+
+.cta-panel p {
+  max-width: 690px;
+  margin-bottom: 0;
+}
+
+.page-hero {
+  padding: 82px 0 66px;
+}
+
+.page-hero h1 {
+  font-size: clamp(3rem, 6vw, 5.4rem);
+}
+
+.breadcrumbs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  font-weight: 720;
+}
+
+.info-table {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 28px;
+  padding: 19px 24px;
+}
+
+.info-row + .info-row {
+  border-top: 1px solid var(--line);
+}
+
+.info-row dt {
+  font-weight: 850;
+}
+
+.info-row dd {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.review-note {
+  display: inline-flex;
+  margin-top: 16px;
+  padding: 7px 10px;
+  border-radius: 9px;
+  background: #fff1b8;
+  color: #4a3700;
+  font-size: 0.76rem;
+  font-weight: 780;
+}
+
+.steps {
+  display: grid;
+  gap: 14px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: steps;
+}
+
+.steps li {
+  position: relative;
+  min-height: 58px;
+  padding: 7px 0 7px 68px;
+  counter-increment: steps;
+}
+
+.steps li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--purple);
+  color: white;
+  content: counter(steps);
+  font-weight: 900;
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-list details {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+}
+
+.faq-list summary {
+  padding: 19px 22px;
+  cursor: pointer;
+  font-weight: 820;
+}
+
+.faq-list details p {
+  padding: 0 22px 20px;
+  color: var(--ink-soft);
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.post-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.post-art {
+  display: grid;
+  min-height: 220px;
+  padding: 30px;
+  align-content: end;
+  background: linear-gradient(135deg, var(--purple), #9b7fed);
+  color: white;
+}
+
+.post-art-coral {
+  background: linear-gradient(135deg, var(--coral), #f2a45f);
+}
+
+.post-art-teal {
+  background: linear-gradient(135deg, var(--teal), #61c7b5);
+}
+
+.post-body {
+  padding: 24px;
+}
+
+.post-meta {
+  margin-bottom: 8px;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  font-weight: 820;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.article {
+  padding-bottom: 90px;
+}
+
+.article h2 {
+  margin-top: 52px;
+  font-size: 2.2rem;
+}
+
+.article-callout {
+  margin: 36px 0;
+  padding: 28px;
+  border-left: 6px solid var(--coral);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--paper);
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+.site-footer {
+  padding: 68px 0 30px;
+  background: var(--ink);
+  color: white;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 0.8fr;
+  gap: 54px;
+}
+
+.footer-logo {
+  color: white;
+}
+
+.footer-tagline {
+  max-width: 420px;
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.footer-title {
+  margin-bottom: 15px;
+  color: var(--yellow);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  display: grid;
+  gap: 9px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-link {
+  display: inline-flex;
+  padding: 9px 13px;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  color: white;
+  font-size: 0.84rem;
+  font-weight: 760;
+  text-decoration: none;
+}
+
+.social-link[aria-disabled="true"] {
+  opacity: 0.68;
+}
+
+.footer-bottom {
+  display: flex;
+  margin-top: 52px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  justify-content: space-between;
+  gap: 24px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.78rem;
+}
+
+@media (max-width: 980px) {
+  .menu-toggle {
+    display: inline-grid;
+    place-items: center;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 76px;
+    right: 18px;
+    left: 18px;
+    display: none;
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    align-items: stretch;
+    flex-direction: column;
+    background: var(--paper);
+    box-shadow: var(--shadow);
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 12px 14px;
+  }
+
+  .site-nav .nav-cta {
+    margin: 5px 0 0;
+    text-align: center;
+  }
+
+  .hero-grid,
+  .split,
+  .programme-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-art {
+    width: min(100%, 620px);
+    margin: 0 auto;
+  }
+
+  .card-grid,
+  .staff-grid,
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  body {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 68px 0;
+  }
+
+  .hero {
+    padding-top: 58px;
+  }
+
+  .hero-grid {
+    gap: 34px;
+  }
+
+  .hero h1,
+  h1 {
+    font-size: clamp(2.75rem, 14vw, 4.1rem);
+  }
+
+  .hero-note {
+    right: 0;
+  }
+
+  .proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-item + .proof-item {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .card-grid,
+  .card-grid-2,
+  .values-grid,
+  .staff-grid,
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card {
+    min-height: auto;
+  }
+
+  .programme-copy,
+  .programme-visual {
+    padding: 30px 24px;
+  }
+
+  .programme-poster {
+    transform: none;
+  }
+
+  .info-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+</style>
+    <script>(() => {
+  const menuButton = document.querySelector("[data-menu-toggle]");
+  const navigation = document.querySelector("[data-site-nav]");
+
+  if (menuButton && navigation) {
+    menuButton.addEventListener("click", () => {
+      const open = navigation.classList.toggle("is-open");
+      menuButton.setAttribute("aria-expanded", String(open));
+      menuButton.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    });
+
+    navigation.addEventListener("click", (event) => {
+      if (event.target.closest("a")) {
+        navigation.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const staffPhotos = [...document.querySelectorAll("[data-staff-photo]")];
+
+  const setFlip = (button, flipped) => {
+    button.classList.toggle("is-flipped", flipped);
+    button.setAttribute("aria-pressed", String(flipped));
+    const name = button.dataset.staffName || "staff member";
+    button.setAttribute(
+      "aria-label",
+      flipped ? `Show ${name}'s staff photo` : `Show ${name}'s alter ego photo`
+    );
+  };
+
+  staffPhotos.forEach((button, index) => {
+    let paused = false;
+    let normalTimer;
+    let alterTimer;
+
+    const clearTimers = () => {
+      window.clearTimeout(normalTimer);
+      window.clearTimeout(alterTimer);
+    };
+
+    const schedule = (delay = 10000 + index * 950) => {
+      if (reduceMotion) return;
+      clearTimers();
+      normalTimer = window.setTimeout(() => {
+        if (paused) {
+          schedule(1800);
+          return;
+        }
+        setFlip(button, true);
+        alterTimer = window.setTimeout(() => {
+          if (!paused) setFlip(button, false);
+          schedule(10000);
+        }, 3000);
+      }, delay);
+    };
+
+    button.addEventListener("mouseenter", () => {
+      paused = true;
+      clearTimers();
+      setFlip(button, true);
+    });
+
+    button.addEventListener("mouseleave", () => {
+      paused = false;
+      setFlip(button, false);
+      schedule(10000);
+    });
+
+    button.addEventListener("focus", () => {
+      paused = true;
+      clearTimers();
+    });
+
+    button.addEventListener("blur", () => {
+      paused = false;
+      setFlip(button, false);
+      schedule(10000);
+    });
+
+    button.addEventListener("click", () => {
+      paused = true;
+      clearTimers();
+      const next = !button.classList.contains("is-flipped");
+      setFlip(button, next);
+      window.setTimeout(() => {
+        paused = false;
+        setFlip(button, false);
+        schedule(10000);
+      }, 5000);
+    });
+
+    schedule();
+  });
+
+  document.querySelectorAll('[aria-disabled="true"]').forEach((link) => {
+    link.addEventListener("click", (event) => event.preventDefault());
+  });
+
+  const year = document.querySelector("[data-current-year]");
+  if (year) year.textContent = String(new Date().getFullYear());
+})();
+</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div class="site-alert">
+      School holiday bookings are handled by Ann in the office.
+      <a href="mailto:office@mountainviewvineyard.org?subject=Kidz.com%20holiday%20programme%20enquiry">Email Ann</a>
+    </div>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="logo" href="index.html" aria-label="Kidz.com home">KIDZ<span class="logo-dot">.</span><span class="logo-com">COM</span></a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-navigation" aria-label="Open menu">☰</button>
+        <nav class="site-nav" id="site-navigation" data-site-nav aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="programmes.html">Before &amp; after school</a>
+          <a href="holidays.html">School holidays</a>
+          <a href="parent-info.html">Parent info</a>
+          <a href="about.html">About &amp; team</a>
+          <a href="blog.html">Blog</a>
+          <a class="nav-cta" href="mailto:office@mountainviewvineyard.org?subject=Kidz.com%20enrolment%20enquiry">Enrol or enquire</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Before school · After school · School holidays</p>
+            <h1>Creative activities, active play and a place to <span>belong.</span></h1>
+            <p class="lead">Kidz.com provides out-of-school care for children in Stratford. They can get stuck into something planned, make their own fun, spend time with friends or slow down after a long day at school.</p>
+            <div class="button-row">
+              <a class="button" href="mailto:office@mountainviewvineyard.org?subject=Kidz.com%20enrolment%20enquiry">Email Ann to enrol <span aria-hidden="true">→</span></a>
+              <a class="button button-secondary" href="holidays.html">See the holiday programme</a>
+            </div>
+          </div>
+          <div class="hero-art">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MjAgNjQwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+S2lkei5jb20gYWN0aXZpdHkgcGhvdG8gcGxhY2Vob2xkZXJzPC90aXRsZT4KICA8ZGVzYyBpZD0iZGVzYyI+QSBjb2xvdXJmdWwgY29sbGFnZSByZXByZXNlbnRpbmcgY3JlYXRpdmUgYWN0aXZpdGllcywgYWN0aXZlIHBsYXkgYW5kIGJlbG9uZ2luZy48L2Rlc2M+CiAgPHJlY3Qgd2lkdGg9IjcyMCIgaGVpZ2h0PSI2NDAiIHJ4PSI0OCIgZmlsbD0iI2QzZjJlZCIvPgogIDxjaXJjbGUgY3g9IjYxOCIgY3k9Ijg4IiByPSI3OCIgZmlsbD0iI2Y3Yzk0YiIvPgogIDxwYXRoIGQ9Ik0yOCA0OTVjODgtNzIgMTU4LTcwIDIzOC0xOHMxNzIgNjggNDI2LTE2djE3OUgyOHoiIGZpbGw9IiM2ZjRiZDgiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MiA1OCkgcm90YXRlKC03IDE4MCAyMTYpIj4KICAgIDxyZWN0IHdpZHRoPSIzNjIiIGhlaWdodD0iNDM4IiByeD0iMjQiIGZpbGw9IiMxODMyM2EiIG9wYWNpdHk9Ii4xOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIgMTQpIi8+CiAgICA8cmVjdCB3aWR0aD0iMzYyIiBoZWlnaHQ9IjQzOCIgcng9IjI0IiBmaWxsPSIjZmZmOWVlIiBzdHJva2U9IiMxODMyM2EiIHN0cm9rZS13aWR0aD0iNSIvPgogICAgPHJlY3QgeD0iMjYiIHk9IjI4IiB3aWR0aD0iMzEwIiBoZWlnaHQ9IjMxNCIgcng9IjE2IiBmaWxsPSIjZWU3MzVmIi8+CiAgICA8cGF0aCBkPSJNNjUgMjg1YzYzLTY5IDEwNi04NiAxNTgtNTUgMzYgMjEgNTggMTYgOTAtOHYxMjBINjV6IiBmaWxsPSIjZjdjOTRiIi8+CiAgICA8Y2lyY2xlIGN4PSIxODMiIGN5PSIxNTEiIHI9IjcyIiBmaWxsPSIjZmZmOWVlIi8+CiAgICA8cGF0aCBkPSJNMTUxIDk3aDY0bC0xNyAzNiAzMyAxMi01NSAzMS0yMi0yNS00MyAxMyAyMS0zOXoiIGZpbGw9IiM2ZjRiZDgiLz4KICAgIDx0ZXh0IHg9IjE4MSIgeT0iMzg3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IiMxODMyM2EiPkFQUFJPVkVEIEtJRFouQ09NIFBIT1RPPC90ZXh0PgogICAgPHRleHQgeD0iMTgxIiB5PSI0MTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iIzQ5NjE2YSI+Y3JlYXRpdmUg4oCiIGFjdGl2ZSDigKIgdG9nZXRoZXI8L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM5NSAxOTYpIHJvdGF0ZSg4IDEyNSAxNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIyNTAiIGhlaWdodD0iMzMwIiByeD0iMjAiIGZpbGw9IiMxODMyM2EiIG9wYWNpdHk9Ii4xOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAgMTIpIi8+CiAgICA8cmVjdCB3aWR0aD0iMjUwIiBoZWlnaHQ9IjMzMCIgcng9IjIwIiBmaWxsPSIjZmZmIiBzdHJva2U9IiMxODMyM2EiIHN0cm9rZS13aWR0aD0iNSIvPgogICAgPHJlY3QgeD0iMjAiIHk9IjIyIiB3aWR0aD0iMjEwIiBoZWlnaHQ9IjIyNCIgcng9IjEzIiBmaWxsPSIjNmY0YmQ4Ii8+CiAgICA8Y2lyY2xlIGN4PSIxMjUiIGN5PSIxMzIiIHI9IjYyIiBmaWxsPSIjZjdjOTRiIi8+CiAgICA8Y2lyY2xlIGN4PSIxMjUiIGN5PSIxMzIiIHI9IjQyIiBmaWxsPSIjZmZmOWVlIi8+CiAgICA8cGF0aCBkPSJNMTI1IDgzdjk4TTc2IDEzMmg5OCIgc3Ryb2tlPSIjZWU3MzVmIiBzdHJva2Utd2lkdGg9IjE0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDx0ZXh0IHg9IjEyNSIgeT0iMjg2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IiMxODMyM2EiPlJFQUwgTU9NRU5UUzwvdGV4dD4KICAgIDx0ZXh0IHg9IjEyNSIgeT0iMzA5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM0OTYxNmEiPm5vdCBzdG9jayBwaG90b3M8L3RleHQ+CiAgPC9nPgogIDxwYXRoIGQ9Ik02MzEgMjRsMTIgMjQgMjcgNC0yMCAxOSA1IDI3LTI0LTEzLTI0IDEzIDUtMjctMjAtMTkgMjctNHoiIGZpbGw9IiNlZTczNWYiIHN0cm9rZT0iIzE4MzIzYSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPHBhdGggZD0iTTMzIDQ0M2MzNS0zOCA2Ni0zMyA4OC0zIiBmaWxsPSJub25lIiBzdHJva2U9IiMxODMyM2EiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGNpcmNsZSBjeD0iNDMiIGN5PSI0MzAiIHI9IjgiIGZpbGw9IiNmN2M5NGIiIHN0cm9rZT0iIzE4MzIzYSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGNpcmNsZSBjeD0iMTExIiBjeT0iNDMxIiByPSI4IiBmaWxsPSIjZjdjOTRiIiBzdHJva2U9IiMxODMyM2EiIHN0cm9rZS13aWR0aD0iNCIvPgo8L3N2Zz4K" alt="Colourful placeholders showing where approved Kidz.com activity photographs will go" />
+            <div class="hero-note">Real Kidz.com moments will replace these placeholders.</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="proof-strip" aria-label="Key information">
+        <div class="container proof-grid">
+          <div class="proof-item">OSCAR approved</div>
+          <div class="proof-item">WINZ subsidies may apply</div>
+          <div class="proof-item">159 Orlando Street, Stratford</div>
+        </div>
+      </div>
+
+      <section class="section section-white">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">What happens here?</p>
+            <h2>There is room for different kinds of afternoons.</h2>
+          </div>
+          <div>
+            <p class="lead">Some children arrive ready to run. Some want to make something. Some want to find their friends. Some need half an hour to do very little.</p>
+            <p>A good afternoon has room for all of them. We plan creative, active and social options without organising every minute. Children can join in, try something different or follow an idea of their own.</p>
+            <ul class="activity-list" aria-label="Example activities">
+              <li>Basketball</li>
+              <li>Baking</li>
+              <li>Melty beads</li>
+              <li>Building challenges</li>
+              <li>Rockets</li>
+              <li>Slime</li>
+              <li>Music</li>
+              <li>Longer projects</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Our programmes</p>
+            <h2>Care that works for families and still feels good for children.</h2>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <div class="icon-disc" aria-hidden="true">☀</div>
+              <h3>Before school</h3>
+              <p>A steady start before the school day begins, with time to settle in, see friends and get ready for the day ahead.</p>
+              <a class="card-link" href="programmes.html#before-school">Before-school care →</a>
+            </article>
+            <article class="card">
+              <div class="icon-disc" aria-hidden="true">↗</div>
+              <h3>After school</h3>
+              <p>Once school is finished, children need choices, space to move, interesting things to do and adults who are paying attention.</p>
+              <a class="card-link" href="programmes.html#after-school">After-school care →</a>
+            </article>
+            <article class="card">
+              <div class="icon-disc" aria-hidden="true">★</div>
+              <h3>School holidays</h3>
+              <p>Themed activities, bigger projects, competitions, special days and trips—with more than one way to have a good day.</p>
+              <a class="card-link" href="holidays.html">Holiday programmes →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-sky">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">What matters to us</p>
+            <h2>Good care is about more than having a busy programme.</h2>
+          </div>
+          <div class="values-grid">
+            <article class="value-card">
+              <span class="number">01 · SAFE</span>
+              <h3>Safety comes first.</h3>
+              <p>Staff are expected to supervise actively, notice what is happening and respond early. Children’s safety and wellbeing come before the activity.</p>
+            </article>
+            <article class="value-card">
+              <span class="number">02 · FUN</span>
+              <h3>Fun with some thought behind it.</h3>
+              <p>We plan activities worth joining—not just things to fill time. There is also room for children’s own ideas and free play.</p>
+            </article>
+            <article class="value-card">
+              <span class="number">03 · CONNECT</span>
+              <h3>Children should be known.</h3>
+              <p>We want to know names, interests, friendships and when something does not seem quite right. Belonging starts with being noticed.</p>
+            </article>
+            <article class="value-card">
+              <span class="number">04 · GROW</span>
+              <h3>Parents shouldn’t have to guess.</h3>
+              <p>We like telling parents the good things we noticed. If something has not gone well, we will talk clearly and work out the next step together.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white">
+        <div class="container">
+          <div class="programme-feature">
+            <div class="programme-copy">
+              <p class="eyebrow">This school holidays</p>
+              <h2>Plenty to choose from.</h2>
+              <p class="lead">Expect a mix of craft, sport, baking, challenges, themed days, longer projects and trips out. Not every child enjoys the same thing, so we plan for choice.</p>
+              <div class="button-row">
+                <a class="button" href="holidays.html">See how holiday care works</a>
+                <a class="button button-secondary" href="mailto:office@mountainviewvineyard.org?subject=Kidz.com%20holiday%20programme%20enquiry">Email Ann</a>
+              </div>
+            </div>
+            <div class="programme-visual">
+              <div class="programme-poster" aria-label="Placeholder holiday programme poster">
+                <span class="draft-chip">Preview placeholder</span>
+                <h3>Next holiday programme</h3>
+                <p>Replace this panel with the current Kidz.com poster before launch.</p>
+                <div class="poster-days">
+                  <div class="poster-day"><span>THEMED DAYS</span><span>✦</span></div>
+                  <div class="poster-day"><span>BIG PROJECTS</span><span>↗</span></div>
+                  <div class="poster-day"><span>TRIPS &amp; CHALLENGES</span><span>●</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Meet the team</p>
+            <h2>Good programmes need good people.</h2>
+            <p class="lead">These are the people who plan the activities, drive the vans, join the games, untangle the hot glue and notice when somebody needs a hand.</p>
+          </div>
+          <div class="staff-grid">
+            <article class="staff-card">
+              <button class="staff-photo-button" type="button" data-staff-photo data-staff-name="Andrew" aria-pressed="false" aria-label="Show Andrew's alter ego photo">
+                <span class="staff-photo-inner">
+                  <span class="staff-photo-face"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlBsYWNlaG9sZGVyIGZvciBBbmRyZXcncyBzdGFmZiBwaG90byI+CiAgPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9IiNkM2YyZWQiLz4KICA8Y2lyY2xlIGN4PSI0MDAiIGN5PSIyMzYiIHI9IjExOCIgZmlsbD0iIzE4MzIzYSIgb3BhY2l0eT0iLjEzIi8+CiAgPHBhdGggZD0iTTIwNSA2MDBjMTctMTU3IDkwLTIyOSAxOTUtMjI5czE3OCA3MiAxOTUgMjI5IiBmaWxsPSIjMmQ5OThiIi8+CiAgPGNpcmNsZSBjeD0iNDAwIiBjeT0iMjI0IiByPSI4NiIgZmlsbD0iI2YzY2FhNyIvPgogIDxwYXRoIGQ9Ik0zMTUgMjExYzMtOTEgNTktMTE3IDExNS04NiAzNiAyMCA1NSA2MSA1NSAxMDctNDAtMzUtMTA4LTMxLTE3MC0yMXoiIGZpbGw9IiM1MTM4MmQiLz4KICA8dGV4dCB4PSI0MDAiIHk9IjUzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjM0IiBmb250LXdlaWdodD0iODAwIiBmaWxsPSIjZmZmIj5BTkRSRVcg4oCiIFNUQUZGIFBIT1RPPC90ZXh0Pgo8L3N2Zz4K" alt="Placeholder for Andrew's staff photograph" /></span>
+                  <span class="staff-photo-face staff-photo-alter"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlBsYWNlaG9sZGVyIGZvciBBbmRyZXcncyBDYXB0YWluIEFtZXJpY2EgYWx0ZXIgZWdvIHBob3RvIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iIzI0NGY5ZiIvPgogIDxjaXJjbGUgY3g9IjQwMCIgY3k9IjI2OCIgcj0iMTgzIiBmaWxsPSIjZTk0ZTRiIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMzAiLz4KICA8Y2lyY2xlIGN4PSI0MDAiIGN5PSIyNjgiIHI9IjExOSIgZmlsbD0iI2ZmZiIvPgogIDxjaXJjbGUgY3g9IjQwMCIgY3k9IjI2OCIgcj0iODAiIGZpbGw9IiMyNDRmOWYiLz4KICA8cGF0aCBkPSJNNDAwIDIwNWwxOSA0MCA0NSA2LTMzIDMxIDggNDQtMzktMjEtMzkgMjEgOC00NC0zMy0zMSA0NS02eiIgZmlsbD0iI2ZmZiIvPgogIDxyZWN0IHg9IjE2OCIgeT0iNTAwIiB3aWR0aD0iNDY0IiBoZWlnaHQ9IjY4IiByeD0iMzQiIGZpbGw9IiMxODMyM2EiLz4KICA8dGV4dCB4PSI0MDAiIHk9IjU0NCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMxIiBmb250LXdlaWdodD0iODAwIiBmaWxsPSIjZmZmIj5BTFRFUiBFR08g4oCiIENBUFRBSU4gQU1FUklDQTwvdGV4dD4KPC9zdmc+Cg==" alt="Placeholder for Andrew's Captain America alter ego photograph" /></span>
+                </span>
+                <span class="flip-hint">photo flips</span>
+              </button>
+              <div class="staff-copy">
+                <h3>Andrew</h3>
+                <p class="staff-role">OSCAR Programme Leader</p>
+                <p>Andrew plans the programme, supports the team and occasionally turns very simple activities into unnecessarily serious competitions. He enjoys seeing children get absorbed in an idea, try something new and find their place in the group.</p>
+                <p class="alter-ego">Alter ego: Captain America</p>
+              </div>
+            </article>
+
+            <article class="staff-card">
+              <button class="staff-photo-button" type="button" data-staff-photo data-staff-name="Cady" aria-pressed="false" aria-label="Show Cady's alter ego photo">
+                <span class="staff-photo-inner">
+                  <span class="staff-photo-face"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlBsYWNlaG9sZGVyIGZvciBDYWR5J3Mgc3RhZmYgcGhvdG8iPgogIDxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjZmZkOWQwIi8+CiAgPGNpcmNsZSBjeD0iNDAwIiBjeT0iMjM2IiByPSIxMTgiIGZpbGw9IiMxODMyM2EiIG9wYWNpdHk9Ii4xMyIvPgogIDxwYXRoIGQ9Ik0yMDUgNjAwYzE3LTE1NyA5MC0yMjkgMTk1LTIyOXMxNzggNzIgMTk1IDIyOSIgZmlsbD0iI2VlNzM1ZiIvPgogIDxjaXJjbGUgY3g9IjQwMCIgY3k9IjIyNCIgcj0iODYiIGZpbGw9IiNmM2NhYTciLz4KICA8cGF0aCBkPSJNMzEwIDI0NWMwLTEwNSA0Mi0xNDEgOTEtMTQxIDcyIDAgOTkgNjcgODggMTY4LTIxLTU2LTUxLTgwLTg5LTgwLTM1IDAtNjQgMTYtOTAgNTN6IiBmaWxsPSIjZDRhMjVmIi8+CiAgPHRleHQgeD0iNDAwIiB5PSI1MzUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzNCIgZm9udC13ZWlnaHQ9IjgwMCIgZmlsbD0iI2ZmZiI+Q0FEWSDigKIgU1RBRkYgUEhPVE88L3RleHQ+Cjwvc3ZnPgo=" alt="Placeholder for Cady's staff photograph" /></span>
+                  <span class="staff-photo-face staff-photo-alter"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlBsYWNlaG9sZGVyIGZvciBDYWR5J3MgRWxsYSBMYW5nbGV5IGFsdGVyIGVnbyBwaG90byI+CiAgPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9IiM3YjRhMmUiLz4KICA8Y2lyY2xlIGN4PSI1ODUiIGN5PSIxMjUiIHI9Ijk0IiBmaWxsPSIjZjdjOTRiIi8+CiAgPHBhdGggZD0iTTE3OSAyODloNDQybC01MiA3N0gyMzF6IiBmaWxsPSIjZDhhNTZhIiBzdHJva2U9IiMxODMyM2EiIHN0cm9rZS13aWR0aD0iOCIvPgogIDxwYXRoIGQ9Ik0zMTAgMjg1YzAtMTIzIDM0LTE3NyA5MC0xNzdzOTAgNTQgOTAgMTc3IiBmaWxsPSIjZDhhNTZhIiBzdHJva2U9IiMxODMyM2EiIHN0cm9rZS13aWR0aD0iOCIvPgogIDxyZWN0IHg9IjM2OSIgeT0iMTc4IiB3aWR0aD0iNjIiIGhlaWdodD0iMjUxIiByeD0iMzEiIGZpbGw9IiMxODMyM2EiLz4KICA8Y2lyY2xlIGN4PSI0MDAiIGN5PSIxNjQiIHI9IjU1IiBmaWxsPSIjZWU3MzVmIiBzdHJva2U9IiMxODMyM2EiIHN0cm9rZS13aWR0aD0iOCIvPgogIDxyZWN0IHg9IjE2MSIgeT0iNTAwIiB3aWR0aD0iNDc4IiBoZWlnaHQ9IjY4IiByeD0iMzQiIGZpbGw9IiMxODMyM2EiLz4KICA8dGV4dCB4PSI0MDAiIHk9IjU0NCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMxIiBmb250LXdlaWdodD0iODAwIiBmaWxsPSIjZmZmIj5BTFRFUiBFR08g4oCiIEVMTEEgTEFOR0xFWTwvdGV4dD4KPC9zdmc+Cg==" alt="Placeholder for Cady's Ella Langley alter ego photograph" /></span>
+                </span>
+                <span class="flip-hint">photo flips</span>
+              </button>
+              <div class="staff-copy">
+                <h3>Cady</h3>
+                <p class="staff-role">OSCAR Team</p>
+                <p>Cady’s finished profile will be written from her staff questionnaire so it sounds like her, rather than a generic team biography. This sample shows the intended length and layout.</p>
+                <p class="alter-ego">Alter ego: Ella Langley</p>
+              </div>
+            </article>
+
+            <article class="staff-card">
+              <button class="staff-photo-button" type="button" data-staff-photo data-staff-name="team member" aria-pressed="false" aria-label="Show team member's alter ego photo">
+                <span class="staff-photo-inner">
+                  <span class="staff-photo-face"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlN0YWZmIHBob3RvIHBsYWNlaG9sZGVyIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI2RkZDJmZiIvPgogIDxjaXJjbGUgY3g9IjQwMCIgY3k9IjIyNCIgcj0iOTYiIGZpbGw9IiM2ZjRiZDgiIG9wYWNpdHk9Ii4zNSIvPgogIDxwYXRoIGQ9Ik0xOTMgNjAwYzE4LTE2NCA5Ni0yMzkgMjA3LTIzOXMxODkgNzUgMjA3IDIzOSIgZmlsbD0iIzZmNGJkOCIgb3BhY2l0eT0iLjcyIi8+CiAgPHJlY3QgeD0iMTg5IiB5PSI0OTIiIHdpZHRoPSI0MjIiIGhlaWdodD0iNjYiIHJ4PSIzMyIgZmlsbD0iIzE4MzIzYSIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iNTM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IiNmZmYiPkFERCBBUFBST1ZFRCBTVEFGRiBQSE9UTzwvdGV4dD4KPC9zdmc+Cg==" alt="Placeholder for an approved staff photograph" /></span>
+                  <span class="staff-photo-face staff-photo-alter"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkFsdGVyIGVnbyBwaG90byBwbGFjZWhvbGRlciI+CiAgPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9IiNmN2M5NGIiLz4KICA8cGF0aCBkPSJNNDAwIDkwbDYyIDEyNiAxMzkgMjAtMTAxIDk4IDI0IDEzOS0xMjQtNjYtMTI0IDY2IDI0LTEzOS0xMDEtOTggMTM5LTIweiIgZmlsbD0iI2VlNzM1ZiIgc3Ryb2tlPSIjMTgzMjNhIiBzdHJva2Utd2lkdGg9IjEwIi8+CiAgPHRleHQgeD0iNDAwIiB5PSIyOTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI5MiIgZm9udC13ZWlnaHQ9IjkwMCIgZmlsbD0iI2ZmZiI+PzwvdGV4dD4KICA8cmVjdCB4PSIxNjgiIHk9IjUwMCIgd2lkdGg9IjQ2NCIgaGVpZ2h0PSI2OCIgcng9IjM0IiBmaWxsPSIjMTgzMjNhIi8+CiAgPHRleHQgeD0iNDAwIiB5PSI1NDQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOSIgZm9udC13ZWlnaHQ9IjgwMCIgZmlsbD0iI2ZmZiI+QUREIEFMVEVSLUVHTyBQSE9UTzwvdGV4dD4KPC9zdmc+Cg==" alt="Placeholder for a staff alter ego photograph" /></span>
+                </span>
+                <span class="flip-hint">photo flips</span>
+              </button>
+              <div class="staff-copy">
+                <h3>Your team member</h3>
+                <p class="staff-role">Role to add</p>
+                <p>Each staff member will have a short, specific profile covering what they enjoy, the activity they are most likely to join and how they want children to feel around them.</p>
+                <p class="alter-ego">Alter ego: To be chosen</p>
+              </div>
+            </article>
+          </div>
+          <p class="team-note">The photographs switch to the alter-ego image after ten seconds, stay there briefly, then return. Hover or tap a photograph to flip it immediately; the text never moves.</p>
+          <div class="button-row">
+            <a class="button button-secondary" href="about.html#team">Meet the whole team</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-purple">
+        <div class="narrow">
+          <p class="eyebrow">What families say</p>
+          <blockquote class="quote">“Add one specific parent comment here—something about their child feeling known, wanting to return or enjoying the range of things to do.”</blockquote>
+          <p class="quote-source">Real parent quotation to be approved before launch</p>
+        </div>
+      </section>
+
+      <section class="section section-white">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">From Kidz.com</p>
+            <h2>Not a weekly newsletter. Just the things worth sharing.</h2>
+          </div>
+          <div>
+            <p class="lead">Once a term, we’ll share some of what children have been making, trying, building and enjoying at Kidz.com.</p>
+            <div class="card">
+              <p class="post-meta">Sample post · July holidays</p>
+              <h3>Rockets, oceans and a lot of hot glue</h3>
+              <p>A draft post layout using recent Kidz.com themes. It shows how a termly update will feel without turning the site into another job every week.</p>
+              <a class="card-link" href="posts/july-holidays.html">Read the sample post →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-panel">
+            <div>
+              <p class="eyebrow">Enrolment &amp; questions</p>
+              <h2>Would Kidz.com suit your child?</h2>
+              <p>Email Ann with your child’s name and school, the kind of care you need, the days you are looking for and when you would like care to begin. Ann will check availability and send the enrolment information.</p>
+            </div>
+            <a class="button" href="mailto:office@mountainviewvineyard.org?subject=Kidz.com%20enrolment%20enquiry">Email Ann <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="logo footer-logo" href="index.html">KIDZ<span class="logo-dot">.</span><span class="logo-com">COM</span></a>
+            <p class="footer-tagline">Creative activities, active play and a place to belong.</p>
+            <div class="social-row">
+              <a class="social-link" href="#" aria-disabled="true" title="Add Kidz.com Facebook URL before launch"><span aria-hidden="true">f</span> Facebook</a>
+              <a class="social-link" href="#" aria-disabled="true" title="Add Kidz.com Instagram URL before launch"><span aria-hidden="true">◎</span> Instagram</a>
+            </div>
+          </div>
+          <div>
+            <p class="footer-title">Explore</p>
+            <div class="footer-links">
+              <a href="programmes.html">Before &amp; after school</a>
+              <a href="holidays.html">School holidays</a>
+              <a href="parent-info.html">Parent information</a>
+              <a href="about.html">About &amp; team</a>
+              <a href="blog.html">Blog</a>
+            </div>
+          </div>
+          <div>
+            <p class="footer-title">Contact</p>
+            <div class="footer-links">
+              <a href="mailto:office@mountainviewvineyard.org">Email Ann</a>
+              <a href="tel:+6467650401">(06) 765 0401</a>
+              <a href="https://maps.google.com/?q=159+Orlando+Street+Stratford+New+Zealand">159 Orlando Street, Stratford</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>An OSCAR programme run by MountainView Vineyard Church.</span>
+          <span>© <span data-current-year>2026</span> Kidz.com · Privacy · Policies</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
