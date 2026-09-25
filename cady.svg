@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Staff photo placeholder">
-  <rect width="800" height="600" fill="#ddd2ff"/>
-  <circle cx="400" cy="224" r="96" fill="#6f4bd8" opacity=".35"/>
-  <path d="M193 600c18-164 96-239 207-239s189 75 207 239" fill="#6f4bd8" opacity=".72"/>
-  <rect x="189" y="492" width="422" height="66" rx="33" fill="#18323a"/>
-  <text x="400" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#fff">ADD APPROVED STAFF PHOTO</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Placeholder for Cady's staff photo">
+  <rect width="800" height="600" fill="#ffd9d0"/>
+  <circle cx="400" cy="236" r="118" fill="#18323a" opacity=".13"/>
+  <path d="M205 600c17-157 90-229 195-229s178 72 195 229" fill="#ee735f"/>
+  <circle cx="400" cy="224" r="86" fill="#f3caa7"/>
+  <path d="M310 245c0-105 42-141 91-141 72 0 99 67 88 168-21-56-51-80-89-80-35 0-64 16-90 53z" fill="#d4a25f"/>
+  <text x="400" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#fff">CADY • STAFF PHOTO</text>
 </svg>
